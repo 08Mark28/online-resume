@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online-Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style> 
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: bisque;
+        }
+
+        .container {
+            border: 5px outset black;
+            background-color: azure;
+            padding: 2%;
+            max-width: 800px;
+            margin: 8px auto;
+            display: flex; /* Added flexbox for layout */
+            flex-wrap: wrap; /* Allow content to wrap */
+        }
+
+        .left-section {
+            flex: 1; /* Take 50% of the container width */
+            padding-right: 10px; /* Add some space between left and right sections */
+            background-color: lightblue; /* Added background color */
+        }
+
+        .left-section img {
+            border: 5px solid gray; /* Changed border color to gray */
+            border-radius: 50%; /* Preserve the existing border-radius */
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .right-section {
+            flex: 1; /* Take 50% of the container width */
+            padding-left: 10px; /* Add some space between left and right sections */
+        }
+
+        /* Divider Style */
+        .divider {
+            width: 1px;
+            background-color: black;
+        }
+
+        img {
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            border-color: black;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            background-color: coral; /* Added background color */
+            color: white; /* Added text color */
+            padding: 10px; /* Added padding */
+            border-radius: 8px; /* Added border radius */
+        }
+
+        h2, h3 {
+            background-color: lightblue; /* Added background color */
+            color: navy; /* Added text color */
+            padding: 5px 10px; /* Added padding */
+            border-radius: 5px; /* Added border radius */
+            margin-top: 0; /* Remove default margin */
+        }
+
+        p {
+            background-color: aliceblue; /* Added background color */
+            padding: 5px 10px; /* Added padding */
+            border-radius: 5px; /* Added border radius */
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            background-color: lavender; /* Added background color */
+            padding: 5px 10px; /* Added padding */
+            border-radius: 5px; /* Added border radius */
+            margin-bottom: 5px;
+        }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 600px) {
+            .container {
+                max-width: 90%;
+                margin: 10px auto;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .left-section,
+            .right-section {
+                flex: 100%; /* Each section takes full width on small screens */
+                padding: 0; /* Reset padding for full width */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="ME.jpg" alt="My Picture" width="220" height="220">
+            <h1>Mark Khelvin Jay O. Cubilo</h1>
+            <div class="section" style="background-color: lightblue; padding: 10px;">
+                <div class="personalInfo">
+                    <h2 class="title" style="text-align: center;">Personal Data</h2>
+                    <ul>
+                        <li><span class="label">Age:</span> <span class="value">20</span></li>
+                        <li><span class="label">Birthdate:</span> <span class="value">August 28, 2003</span></li>
+                        <li><span class="label">Civil Status:</span> <span class="value">Single</span></li>
+                        <li><span class="label">Nationality:</span> <span class="value">Filipino/Chinese</span></li>
+                        <li><span class="label">Religion:</span> <span class="value">Roman Catholic</span></li>
+                        <li><span class="label">Address:</span> <span class="value">189 Purok Pagkakaisa 2, Ibabang Iyam, Lucena City</span></li>
+                        <li><span class="label">Father's Name:</span> <span class="value">Reniel M. Cubilo</span></li>
+                        <li><span class="label">Mother's Name:</span> <span class="value">Roselyn O. Cubilo</span></li>                            
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-information" style="background-color: lightblue; padding: 10px;">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li>
+                        &#x1F4DE; Phone: (63) 932-427-7762
+                    </li>
+                    <li>
+                        <i class="fa fa-google" style="font-size:20px"></i> Email: <a href="mailto:markkhelvinjaycubilo28@gmail.com">markkhelvinjaycubilo28@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-facebook" style="font-size:20px"></i> Facebook: <a href="https://www.facebook.com/yourprofile">Mark Khelvin Jay Cubilo</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-instagram" style="font-size:20px"></i> Instagram: <a href="https://www.instagram.com/yourprofile">marky_l0v3</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-github" style="font-size:20px"></i> GitHub: <a href="https://github.com/08Mark28">@08Mark28</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="skills" style="background-color: lightblue; padding: 10px;">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML5/CSS3</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+            <div class="awards" style="background-color: lightblue; padding: 10px;">
+                <h2><strong>Awards and Certification</strong></h2>
+                <h3><strong>Senior High School</strong></h3>
+                <ul>
+                    <li>With Honors</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Divider -->
+        <div class="divider"></div>
+        <div class="right-section">
+            <div class="section">
+                <h2 style="text-align: center;">Summary</h2>
+                <p style="padding: 10px;">Experienced programmer and developer, with a strong background in programming and designing and has a passion for creating efficient programs and good designs.</p>
+                <h2 style="text-align: center;">Career Objectives</h2>
+                <p style="padding: 10px;">Intensive and results-oriented IT professional dedicated to using technology to develop and enhance operational efficiency. Interested in the position of IT expert, which would allow me to use my technical skills, experience in problem resolution, and project experience in a challenging role that promotes a modern business.</p>
+            </div>
+            <div class="section">
+                <h2 style="text-align: center;">Education</h2>
+                <strong style="padding: 10px;">Bachelor of Science in Computer Science</strong>
+                <ul>
+                    <li style="padding: 10px;">Dalubhasaan ng Lunsond ng Lucena, Lucena City</li>
+                </ul>
+                <strong style="padding: 10px;">Senior High School</strong>
+                <ul>
+                    <li style="padding: 10px;">Quezon National High School, Lucena City</li>
+                </ul>
+                <strong style="padding: 10px;">High School</strong>
+                <ul>
+                    <li style="padding: 10px;">Quezon National High School, Lucena City</li>
+                </ul>
+                <strong style="padding: 10px;">Elementary</strong>
+                <ul>
+                    <li style="padding: 10px;">Lucena West 1, Lucena City</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2 style="text-align: center;">Experience</h2>
+                <li style="padding: 10px;"><strong>IT Asset Management System</strong></li>
+                <ul>
+                    <li style="padding: 10px;">This system is conceived to deal with an IT department's assets, including hardware, software, or other items of IT resources. It focuses on the Python SQL module in terms of creating and using a database for purposes like adding new assets, updating details of existing assets, and even deleting them from the system. Users interact with the system through a command-line interface, inputting commands to perform various operations on the asset data stored in the database.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
